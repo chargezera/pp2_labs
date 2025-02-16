@@ -8,7 +8,7 @@ class Account:
     
     def withdraw(self, money):
         if self.balance - money >= 0: self.balance -= money
-        else: print(f'doesn\'t enough, you have only - {self.balance}tg')
+        else: print(f'isn\'t enough, you have only - {self.balance}tg')
     
     def __str__(self):
         return f'name: {self.owner} \nbalance: {self.balance}'
