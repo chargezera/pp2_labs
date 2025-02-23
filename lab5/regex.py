@@ -1,6 +1,6 @@
 import re
 
-patterns_tests = [
+patterns = [
     (r'a[b]*', ["a", "ab", "abb", "ac", "abc"]),
     (r'a[b]{2,3}', ["abb", "abbb", "ab", "abbbb"]),
     (r'[a-z]+_[a-z]+', ["hello_world", "test_case", "Hello_World", "testCase"]),
@@ -13,7 +13,7 @@ patterns_tests = [
     (r'([A-Z])', ["CamelCaseToSnakeCase"])
 ]
 
-for pattern, test_strings in patterns_tests:
+for pattern, test_strings in patterns:
     print(f"Pattern: {pattern}")
     for s in test_strings:
         if pattern == r'[ ,.]':
