@@ -1,7 +1,7 @@
 import re
 
 patterns = [
-    (r'a[b]*', ["a", "ab", "abb", "ac", "abc"]),
+    (r'a[b]*', ["a", "ab", "abb", "acb", "abc"]),
     (r'a[b]{2,3}', ["abb", "abbb", "ab", "abbbb"]),
     (r'[a-z]+_[a-z]+', ["hello_world", "test_case", "Hello_World", "testCase"]),
     (r'[A-Z][a-z]+', ["Hello", "Python", "PYTHON", "Test123"]),
